@@ -123,8 +123,11 @@ header.site-header {
 .stack > * + * { margin-top: 18px; }
 
 .hero-phones { display: flex; align-items: flex-end; justify-content: center; gap: 16px; }
-.phone { width: 100%; max-width: 300px; aspect-ratio: 912 / 1200; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); }
-.phone-side { display: none; width: 38%; max-width: 240px; aspect-ratio: 912 / 1200; object-fit: cover; border-radius: 20px; opacity: 0.85; box-shadow: var(--shadow); }
+.phone { width: 100%; max-width: 330px; height: auto; object-fit: contain; border-radius: 20px; border: 1px solid rgba(255,255,255,0.06); filter: drop-shadow(0 24px 50px rgba(0,0,0,0.55)); }
+.phone-side { display: none; width: 40%; max-width: 260px; height: auto; object-fit: contain; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); opacity: 0.9; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5)); }
+.card .ico svg { width: 22px; height: 22px; }
+
+
 
 .trust { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 12px; color: var(--muted); padding-top: 6px; }
 
@@ -146,7 +149,8 @@ header.site-header {
   width: 42px; height: 42px; border-radius: 12px;
   background: var(--primary-soft);
   display: flex; align-items: center; justify-content: center;
-  margin-bottom: 16px; font-size: 20px;
+  margin-bottom: 16px; color: #e0604f;
+
 }
 
 .soft { background: var(--card-soft); }
@@ -177,7 +181,7 @@ ul.checks li::before { content: "—"; position: absolute; left: 0; color: var(-
   width: fit-content;
   margin: 32px auto 0;
 }
-.qr-card canvas, .qr-card img { display: block; }
+.qr-card img { display: block; width: 188px; height: 188px; }
 .qr-card .qr-caption { font-size: 12px; color: #444; text-align: center; }
 
 .drive-logo { height: 56px; width: auto; }

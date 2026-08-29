@@ -99,20 +99,27 @@
           </p>
           <div class="cards">
             <div class="card">
-              <div class="ico">🍎</div>
+              <div class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8c-1.5-2.5-4-3-5.6-1.6C4.4 8 4.5 12 6.5 15.5 8 18.2 9.7 20 12 20s4-1.8 5.5-4.5c2-3.5 2.1-7.5.1-9.1C16 5 13.5 5.5 12 8Z"/><path d="M12 8V4.5"/><path d="M12 4.5c1.2 0 2.2-1 2.2-2.2C13 2.3 12 3.3 12 4.5Z"/></svg>
+              </div>
               <h3>Nutrição inteligente</h3>
               <p>Plano alimentar montado para o seu corpo, rotina e objetivo — com substituições por grupo de alimento a um toque, sem sair da meta.</p>
             </div>
             <div class="card">
-              <div class="ico">💊</div>
+              <div class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.5v7"/></svg>
+              </div>
               <h3>Suplementação precisa</h3>
               <p>Protocolo com dose, horário e finalidade explicada. Nada genérico: cada item existe por um motivo nos seus dados.</p>
             </div>
             <div class="card">
-              <div class="ico">🏋️</div>
+              <div class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg>
+              </div>
               <h3>Treinos progressivos</h3>
               <p>Sessões com carga, séries e execução animada. O check-in de cada treino realimenta o plano da semana seguinte.</p>
             </div>
+
           </div>
         </div>
       </section>
@@ -249,7 +256,7 @@
                 </p>
               </div>
               <div class="qr-card">
-                <div id="qrcode"></div>
+                <img src="assets/qr-beta.png" alt="QR Code para acessar metafisico.io no celular" width="188" height="188" loading="lazy" />
                 <div class="qr-caption">Escaneie para abrir no celular<br /><strong>metafisico.io</strong></div>
               </div>
             </div>
@@ -276,18 +283,7 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-    <script>
-      (function () {
-        var target = document.getElementById('qrcode');
-        if (!target || !window.QRCode) return;
-        var url = window.location.origin && window.location.origin.indexOf('http') === 0
-          ? window.location.origin + '/'
-          : 'https://metafisico.io/';
-        var canvas = document.createElement('canvas');
-        target.appendChild(canvas);
-        window.QRCode.toCanvas(canvas, url, { width: 188, margin: 1, color: { dark: '#111111', light: '#ffffff' } });
-      })();
-    </script>
+
+
   </body>
 </html>

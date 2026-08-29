@@ -123,8 +123,8 @@ header.site-header {
 .stack > * + * { margin-top: 18px; }
 
 .hero-phones { display: flex; align-items: flex-end; justify-content: center; gap: 16px; }
-.phone { width: 100%; max-width: 300px; border-radius: 28px; box-shadow: var(--shadow); }
-.phone-side { display: none; width: 38%; border-radius: 20px; opacity: 0.85; box-shadow: var(--shadow); }
+.phone { width: 100%; max-width: 300px; aspect-ratio: 912 / 1200; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); }
+.phone-side { display: none; width: 38%; max-width: 240px; aspect-ratio: 912 / 1200; object-fit: cover; border-radius: 20px; opacity: 0.85; box-shadow: var(--shadow); }
 
 .trust { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 12px; color: var(--muted); padding-top: 6px; }
 
@@ -180,7 +180,7 @@ ul.checks li::before { content: "—"; position: absolute; left: 0; color: var(-
 .qr-card canvas, .qr-card img { display: block; }
 .qr-card .qr-caption { font-size: 12px; color: #444; text-align: center; }
 
-.drive-logo { height: 34px; width: auto; }
+.drive-logo { height: 56px; width: auto; }
 
 /* Footer */
 footer.site-footer { border-top: 1px solid var(--border); background: var(--card-soft); padding: 44px 0; }

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exclusão de conta e dados | METAFISICO</title>
+    <meta
+      name="description"
+      content="Solicite a exclusão da sua conta e dos seus dados do METAFISICO e DRIVE: passos no app, contato por e-mail e o que é excluído ou mantido."
+    />
+    <link rel="canonical" href="https://metafisico.io/excluir-conta.html" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Exclusão de conta e dados | METAFISICO" />
+    <meta property="og:description" content="Como solicitar a exclusão da sua conta e dos seus dados do ecossistema METAFISICO." />
+    <meta property="og:url" content="https://metafisico.io/excluir-conta.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page { padding: 72px 0 96px; }
+      .page h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+      .lead { max-width: 720px; }
+      .steps { counter-reset: step; margin: 32px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; }
+      .steps li {
+        counter-increment: step;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px 22px 20px 66px;
+        position: relative;
+      }
+      .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        background: var(--primary-soft);
+        border: 1px solid rgba(192, 57, 43, 0.45);
+        color: #e8776a;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .steps li strong { color: var(--fg); }
+      .steps li p { margin: 6px 0 0; font-size: 14.5px; }
+      .cards-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 32px; }
+      .box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }
+      .box h3 { margin-bottom: 4px; }
+      .box ul { margin: 14px 0 0; padding-left: 20px; color: var(--muted); font-size: 14.5px; display: grid; gap: 6px; }
+      .box ul li::marker { color: #e8776a; }
+      .contact {
+        margin-top: 32px;
+        background: var(--card-soft);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px;
+      }
+      .contact a.btn { margin-top: 16px; display: inline-block; }
+      .fine-note { font-size: 13px; margin-top: 28px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav">
+        <img src="assets/logo-metafisico.svg" alt="METAFISICO" />
+        <nav class="nav-links">
+          <a href="/">Início</a>
+          <a href="/#ecossistema">Ecossistema</a>
+          <a href="privacidade.html">Privacidade</a>
+          <a href="mailto:privacidade@metafisico.io">Contato</a>
+        </nav>
+        <a class="btn btn-primary" href="/#baixar">Baixar o app</a>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="wrap">
+        <span class="eyebrow">Conta e privacidade</span>
+        <h1 style="margin-top:16px">Exclusão de conta e dados</h1>
+        <p class="lead">
+          No <strong>METAFISICO</strong>, você tem controle total sobre a sua conta. Você pode excluir
+          sua conta e todos os dados associados a qualquer momento, diretamente no aplicativo — sem
+          burocracia e sem custo. Se preferir, também é possível solicitar a exclusão por e-mail.
+        </p>
+
+        <h2 style="margin-top:48px;font-size:1.5rem">Como excluir pelo aplicativo</h2>
+        <ol class="steps">
+          <li>
+            <strong>Abra o app METAFISICO</strong>
+            <p>Faça login com a conta que deseja excluir.</p>
+          </li>
+          <li>
+            <strong>Toque em “Mais”</strong>
+            <p>No menu inferior do painel, abra a aba <strong>Mais</strong>.</p>
+          </li>
+          <li>
+            <strong>Entre em “Privacidade & LGPD”</strong>
+            <p>A seção reúne todos os seus direitos: consentimentos, exportação e exclusão de dados.</p>
+          </li>
+          <li>
+            <strong>Toque em “Excluir minha conta”</strong>
+            <p>Confirme a solicitação na caixa de diálogo. Todos os seus dados serão removidos e você será desconectado.</p>
+          </li>
+        </ol>
+
+        <div class="cards-2">
+          <div class="box">
+            <h3>O que é excluído</h3>
+            <ul>
+              <li>Dados de perfil: nome, e-mail, telefone e informações físicas.</li>
+              <li>Exames laboratoriais enviados e biomarcadores interpretados.</li>
+              <li>Planos de nutrição, suplementação e treino.</li>
+              <li>Métricas de wearables, fotos de progresso e fotos de refeições.</li>
+              <li>Conteúdo social do DRIVE: publicações, comentários, reações e mensagens diretas.</li>
+              <li>Histórico de interações com a MentorIA e registros de consentimento.</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>O que é mantido e por quanto tempo</h3>
+            <ul>
+              <li>A exclusão é processada em até <strong>30 dias</strong> após a confirmação.</li>
+              <li>Nenhum dado pessoal é mantido após esse período, salvo obrigação legal de guarda.</li>
+              <li>Podem ser preservados registros técnicos mínimos de segurança e de prevenção a fraudes, anonimizados.</li>
+              <li>Não vendemos e não reutilizamos dados de contas excluídas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h3 style="font-size:1.2rem">Solicitar exclusão por e-mail</h3>
+          <p>
+            Não tem mais acesso ao aplicativo? Envie um e-mail para
+            <strong>privacidade@metafisico.io</strong> a partir do endereço vinculado à sua conta,
+            com o assunto <strong>“Exclusão de conta”</strong>. Vamos confirmar sua identidade e
+            processar a exclusão em até 30 dias.
+          </p>
+          <a class="btn btn-primary" href="mailto:privacidade@metafisico.io?subject=Exclus%C3%A3o%20de%20conta%20—%20METAFISICO">Solicitar exclusão por e-mail</a>
+        </div>
+
+        <p class="fine-note">
+          Para saber como tratamos seus dados, consulte a
+          <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.
+          Dúvidas sobre LGPD: privacidade@metafisico.io.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap cols">
+        <div>
+          <img src="assets/logo-metafisico.svg" alt="METAFISICO" />
+          <p class="fine">METAFISICO · Ciência, IA e comunidade.</p>
+        </div>
+        <nav>
+          <a href="/">Início</a>
+          <a href="privacidade.html">Privacidade</a>
+          <a href="excluir-conta.html">Exclusão de conta</a>
+          <a href="mailto:contato@metafisico.io">Contato</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
